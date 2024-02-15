@@ -5,7 +5,8 @@
   "main": "./src/index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --reporter=progress",
-    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --watch"
+    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --watch",
+    "test:calc": "./node_modules/.bin/mocha tests/**/calc.spec.js --watch"
   },
   "author": "israelcena",
   "license": "MIT",
