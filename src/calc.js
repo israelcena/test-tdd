@@ -10,6 +10,6 @@ module.exports = {
     return a * b;
   },
   div(a, b) {
-    return a / b;
+    return (b === 0) ? 'Não é possível divisão por 0' : a / b
   },
 };
