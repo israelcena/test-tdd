@@ -29,4 +29,37 @@ describe("Calculadora", () => {
       expect(calc.div).to.be.a.function;
     });
   });
+
+  describe("Sum", () => {
+    it("should return 4 when `sum (2,2)`", () => {
+      expect(calc.sum(2,2)).to.be.equal(4);
+    });
+  });
+
+  describe("Sub", () => {
+    it("should return 4 when `sub (6,2)`", () => {
+      expect(calc.sub(6,2)).to.be.equal(4);
+    });
+
+    it("should return -4 when `sub (2,6)`", () => {
+      expect(calc.sub(2,6)).to.be.equal(-4);
+    });
+  });
+
+  describe("Mult", () => {
+    it("should return 4 when `mul (2,2)`", () => {
+      expect(calc.mul(2,2)).to.be.equal(4);
+    });
+  });
+
+  describe("Div", () => {
+    it("should return 1 when `div (2,2)`", () => {
+      expect(calc.div(2,2)).to.be.equal(1);
+    });
+
+    it("should return `Não é possível divisão por 0` when divide by 0", () => {
+      expect(calc.div(2,0)).to.be.a.string('Não é possível divisão por 0');
+    });
+  });
+
 });
