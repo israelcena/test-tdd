@@ -1,7 +1,7 @@
-/* eslint-disable */
-var expect = require("chai").expect;
-var calc = require("../src/calc");
+import { expect } from 'chai';
+import calc from '../src/calc';
 
+/* eslint-disable */
 describe("Calculadora", () => {
   // smoke tests
   describe("Smoke tests", () => {
