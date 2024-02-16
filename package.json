@@ -6,7 +6,8 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
     "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
-    "test:calc": "./node_modules/.bin/mocha tests/**/calc.spec.js --require babel-register --watch"
+    "test:calc": "./node_modules/.bin/mocha tests/**/calc.spec.js --require babel-register --watch",
+    "test:fizzBuzz": "./node_modules/.bin/mocha tests/**/fizzbuzz.spec.js --require babel-register --watch"
   },
   "author": "israelcena",
   "license": "MIT",
