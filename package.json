@@ -7,7 +7,12 @@
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
     "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
     "test:calc": "./node_modules/.bin/mocha tests/**/calc.spec.js --require babel-register --watch",
-    "test:fizzBuzz": "./node_modules/.bin/mocha tests/**/fizzbuzz.spec.js --require babel-register --watch"
+    "test:fizzBuzz": "./node_modules/.bin/mocha tests/**/fizzbuzz.spec.js --require babel-register --watch",
+    "test:coverage": "nyc npm test"
+  },
+  "nyc": {
+    "reporter": ["text", "html"],
+    "exclude": ["tests/**"]
   },
   "author": "israelcena",
   "license": "MIT",
@@ -18,6 +23,7 @@
     "eslint": "^8.56.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.29.1",
-    "mocha": "^10.3.0"
+    "mocha": "^10.3.0",
+    "nyc": "^15.1.0"
   }
 }
